@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/layout_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#3A2C2C"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_slab_semibold"
+            android:text="Order Details"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/generalTextStyle"
+            android:text="777 VND"
+            android:textColor="@color/material_dynamic_neutral50" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/generalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Bim Bim x1"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/generalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Tra sua han quoc 1x2"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/generalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="Delivery Address"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/generalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="484 Le Van Viet, Tang Nhon Phu A, Thu Duc, HCM"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/generalTextButton"
+        android:text="Payment"
+        app:cornerRadius="0dp" />
+</LinearLayout>

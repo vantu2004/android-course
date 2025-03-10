@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66FFEB3B"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:hint="@string/input_text"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="#827717"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#48FFC107"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:onClick="deleteData"
+        android:padding="10dp"
+        android:text="Delete"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_save" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#48FFC107"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:onClick="saveInputText"
+        android:padding="10dp"
+        android:text="@string/save"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_output" />
+
+    <TextView
+        android:id="@+id/textView_output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_slab_medium"
+        android:padding="20dp"
+        android:text="@string/ouput_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

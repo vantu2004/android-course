@@ -1,0 +1,68 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.vantu.todoapp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.vantu.todoapp"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.legacy.support.v4
+    implementation libs.recyclerview
+//    implementation libs.lifecycle.livedata.ktx
+//    implementation libs.lifecycle.viewmodel.ktx
+//    implementation libs.legacy.support.v4
+//    implementation libs.recyclerview
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // https://mvnrepository.com/artifact/androidx.room/room-runtime
+    runtimeOnly libs.room.runtime
+//    // https://mvnrepository.com/artifact/androidx.room/room-compiler
+//    implementation libs.room.compiler
+    // https://mvnrepository.com/artifact/androidx.room/room-testing
+    implementation libs.room.testing
+    // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel
+    runtimeOnly libs.lifecycle.viewmodel
+    // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-livedata
+    runtimeOnly libs.lifecycle.livedata
+    // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common
+    runtimeOnly libs.lifecycle.common
+
+    // https://mvnrepository.com/artifact/androidx.room/room-compiler
+    annotationProcessor  libs.room.compiler
+
+    // https://mvnrepository.com/artifact/com.google.android.material/material
+    runtimeOnly libs.material
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_slab</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#F6BDC7</item>
+        <item name="android:textColor">#6D6D6D</item>
+        <item name="android:textColorLink">#9C27B0</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

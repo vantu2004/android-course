@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="appName">TRIVIA QUIZ APP</string>
+    <string name="question">Question</string>
+    <string name="question_num">Question: 10/998</string>
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+    <string name="submit">Submit</string>
+    <string name="current_score">Current Score: 234</string>
+    <string name="highest_score">Highest Score: 900</string>
+    <string name="your_answer_is">Your answer is:</string>
+    <string name="submited">Submited</string>
+    <string name="congratulation">CONGRATULATION!</string>
+    <string name="sub_current_score">Current Score:</string>
+    <string name="sub_time">Time:</string>
+    <string name="sub_highest_score">Highest Score:</string>
+
+</resources>

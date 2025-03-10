@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Bio</string>
+    <string name="full_name">LE VAN TU</string>
+
+    <string name="bio">
+        Once upon a time in a small village, there lived a young boy named Jack.\n
+        He was known for his insatiable curiosity and boundless love for adventures.\n\n
+
+        One day, while rummaging through the dusty old attic of his house, Jack stumbled upon an ancient, weathered map.\n
+        Excited beyond words, he rushed to show it to his best friend, Lucy.\n
+        "This looks like a treasure map!" Lucy exclaimed, her eyes wide with amazement.\n\n
+
+        The next morning, as the sun peeked over the horizon, Jack and Lucy packed their bags with essentials for their journey.\n
+        With the map in hand, they set off on what would become the greatest adventure of their young lives.\n
+        The map led them through dense forests where the sunlight barely pierced through the thick canopy,\n
+        across raging rivers that tested their courage, and up steep, treacherous mountains.\n
+        Each step of the way was filled with challenges that seemed insurmountable at first.\n
+        They encountered ancient riddles that required their sharp wits to solve,\n
+        escaped cleverly designed traps that had been set to deter intruders,\n
+        and discovered hidden clues that guided them further on their quest.\n\n
+
+        Days turned into nights as they braved the wilderness, their determination unwavering.\n
+        After what felt like an eternity of traveling and overcoming obstacles, they finally reached a clearing.\n
+        Before them lay the spot marked with a prominent \'X\' on the map.\n
+        With hearts pounding in anticipation, they began to dig.\n
+        The earth gave way, revealing an old wooden chest, its surface adorned with intricate carvings.\n
+        As they pried it open, the sunlight caught the gleam of gold coins and precious jewels within.\n
+        Their eyes sparkled with excitement and disbelief, for they had found the legendary treasure.\n\n
+
+        Jack and Lucy returned to their village as heroes, their adventure becoming the talk of the town.\n
+        They shared their newfound wealth with the villagers, ensuring that everyone benefited from their incredible journey.\n
+        Their tale of courage, friendship, and discovery quickly became a legendary story,\n
+        inspiring many young adventurers in the years to come to seek their own paths of wonder and exploration.\n\n
+
+        The end.
+
+    </string>
+    <string name="enter_your_hobbies">Enter your hobbies</string>
+    <string name="enter">Enter</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copyright">Todoist App - By VanTu - Version 1.0</string>
+    <string name="hint">e.g.,,Eat less at dinner</string>
+</resources>

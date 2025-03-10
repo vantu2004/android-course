@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FADBE3"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView_question"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_margin="20dp"
+            android:gravity="start"
+            android:text="@string/textView_question"
+            android:textColor="#121212"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/button_false"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/false_button"
+            app:cornerRadius="10dp"
+            android:onClick="checkFalseAnswer"
+            app:layout_constraintBottom_toBottomOf="@+id/button_true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="RtlHardcoded,VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_prev"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/prev"
+            app:cornerRadius="10dp"
+            android:onClick="prevQuestion"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/button_next"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_true"
+            app:layout_constraintVertical_bias="0.135"
+            tools:ignore="RtlHardcoded,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button_next"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/next"
+            app:cornerRadius="10dp"
+            android:onClick="nextQuestion"
+            app:layout_constraintBottom_toBottomOf="@+id/button_prev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_prev"
+            app:layout_constraintTop_toTopOf="@+id/button_prev"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlHardcoded,VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_true"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/true_button"
+            app:cornerRadius="10dp"
+            android:onClick="checkTrueAnswer"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/button_false"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.638"
+            tools:ignore="RtlHardcoded,TextContrastCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/copyright_2025_vantu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

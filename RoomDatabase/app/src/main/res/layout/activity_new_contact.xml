@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewContact">
+
+    <EditText
+        android:id="@+id/editText_name"
+        style="@style/editText_style"
+        android:autofillHints=""
+        android:hint="@string/enter_name"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editText_occupation"
+        style="@style/editText_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_occupation"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/button_style"
+        android:onClick="saveContact"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_occupation"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_update"
+        style="@style/button_style"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        android:onClick="updateContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+
+    <Button
+        android:id="@+id/button_delete"
+        style="@style/button_style"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="deleteContact"
+        app:layout_constraintBottom_toBottomOf="@+id/button_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_update" />
+</androidx.constraintlayout.widget.ConstraintLayout>

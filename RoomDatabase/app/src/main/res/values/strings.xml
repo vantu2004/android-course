@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RoomDatabase</string>
+    <string name="save">Save</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_occupation">Enter occupation</string>
+    <string name="todo">TODO</string>
+    <string name="holla">HOLLA!\n</string>
+</resources>

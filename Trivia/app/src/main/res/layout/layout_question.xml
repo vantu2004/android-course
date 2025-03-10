@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66B3BFFF">
+
+    <TextView
+        android:id="@+id/textView_subUserChoose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_slab"
+        android:padding="10dp"
+        android:text="Correct answer: true"
+        android:textColor="#80000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_subKey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_subQuestion" />
+
+    <TextView
+        android:id="@+id/textView_subKey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_slab"
+        android:padding="10dp"
+        android:text="Your answer: false"
+        android:textAlignment="textEnd"
+        android:textColor="#80000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_subUserChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_subUserChoose"
+        app:layout_constraintTop_toTopOf="@+id/textView_subUserChoose" />
+
+    <TextView
+        android:id="@+id/textView_subQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_slab"
+        android:padding="10dp"
+        android:text="Question 1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

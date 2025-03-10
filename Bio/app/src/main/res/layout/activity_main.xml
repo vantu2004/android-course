@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bio"
+            type="com.vantu.bio.data.Bio" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8CBD9"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView_robot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView_fullName"
+            style="@style/titleStyle"
+            android:text="@{bio.name}" />
+
+        <EditText
+            android:id="@+id/editText_hobbies"
+            style="@style/button_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_hobbies"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize"
+            android:autofillHints="Watching films"/>
+        <Button
+            android:id="@+id/button_hobbies"
+            style="@style/button_input_style"
+            android:layout_marginTop="0dp"
+            android:text="@string/enter"
+            app:cornerRadius="5dp"
+            tools:ignore="VisualLintButtonSize"
+            android:onClick="addHobbies"/>
+
+        <TextView
+            android:id="@+id/textView_hobbies"
+            style="@style/button_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@{bio.hobbies}"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_bio"
+                style="@style/generalStyle"
+                android:text="@string/bio"
+                tools:ignore="VisualLintLongText" />
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

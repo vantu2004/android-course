@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="click_here">Click here!</string>
+    <string name="hint_plainText">Please input your\'s name</string>
+    <string name="back">Back</string>
+</resources>
