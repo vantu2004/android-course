@@ -11,6 +11,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -65,11 +66,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             MarkerOptions markerOptions = new MarkerOptions();
             markerOptions.position(latLng);
             markerOptions.title("Lat: " + location.getLatitude() + ", Lon: " + location.getLongitude());
+            markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
             mMap.addMarker(markerOptions);
             lastLocationPlaced = latLng;
         }
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lastLocationPlaced));
+        // 1-20
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lastLocationPlaced, 12));
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override

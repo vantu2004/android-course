@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Hàm này xử lý kết quả yêu cầu quyền truy cập vị trí sau khi người dùng chập nhận hoặc từ chối quyền.
+    // Hàm này xử lý kết quả yêu cầu quyền truy cập vị trí sau khi người dùng chấp nhận hoặc từ chối quyền.
     // requetsCode mã yêu cầu cấp quyền, permissions là danh sách quyền, grantResults là kết quả chọn của user
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
